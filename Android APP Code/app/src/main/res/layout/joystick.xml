@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_btn"
+            android:src="@drawable/back"
+            android:layout_margin="15dp"/>
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:id="@+id/joyStick"
+            android:layout_height="wrap_content"
+            custom:JV_buttonColor="#FFFFFF"
+            custom:JV_buttonSizeRatio="20%"
+            android:layout_weight="1"
+            custom:JV_borderColor="#00796B"
+            custom:JV_backgroundColor="#009688"
+            custom:JV_borderWidth="4dp"
+            custom:JV_fixedCenter="false"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/speed_text"
+                android:gravity="center"
+                android:text="Speed : 0/9"
+                android:textSize="35dp"
+                android:textColor="#F44336"/>
+
+
+
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scrollbarSize="10dp"
+                android:max="9"
+                android:min="0"
+                android:layout_margin="5dp"
+                android:id="@+id/speedbar"/>
+
+            <CheckBox
+                android:id="@+id/speed_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text=" Auto Set Speed"
+                android:textColor="#009688"
+                android:textSize="35dp" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

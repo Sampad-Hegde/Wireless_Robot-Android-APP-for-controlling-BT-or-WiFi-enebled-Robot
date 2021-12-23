@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/op_mode"
+                android:textOff="Mode : BT"
+                android:textOn="Mode : WiFi"
+                android:textSize="20dp"
+                android:shadowColor="#03A9F4"
+                android:textColor="#000000"
+                android:background="#03A9F4"
+                android:textAlignment="center"
+                android:textAllCaps="false"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/connect_text"
+                android:textColor="#F44336"
+                android:text="Connected To: None"
+                android:gravity="center"
+                android:textSize="25dp"/>
+
+            <Button
+                android:id="@+id/connect_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Connect"
+                android:textSize="20dp"
+                android:shadowColor="#03A9F4"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:background="#03A9F4"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:text="Mode : "/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/mode_dropdown"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:id="@+id/speed_text"
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="0/9"/>
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/speed_seek"
+                android:max="9"
+                android:min="0"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/up_btn"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/up"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/down_btn"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/down"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/left_btn"
+                    android:layout_margin="15dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/left"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/right_btn"
+                    android:layout_margin="15dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/right"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
