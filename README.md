@@ -29,8 +29,7 @@
 
 ### Watch Images and Videos inside attached with this GitHub Repo.
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="https://github.com/Sampad-Hegde/Wireless_Robot-Android-APP-for-controlling-BT-or-WiFi-enebled-Robot/tree/main/Images%20and%20Videos/BT_Robot_4.jpg">
-    <source src="https://github.com/Sampad-Hegde/Wireless_Robot-Android-APP-for-controlling-BT-or-WiFi-enebled-Robot/tree/main/Images%20and%20Videos/APP%20Demo.mp4" type="video/mp4">
-  </video>
-</figure>
+![](https://github.com/Sampad-Hegde/Wireless_Robot-Android-APP-for-controlling-BT-or-WiFi-enebled-Robot/blob/main/Images%20and%20Videos/Main%20View%20in%20BT%20Mode.jpg)
+![](https://github.com/Sampad-Hegde/Wireless_Robot-Android-APP-for-controlling-BT-or-WiFi-enebled-Robot/blob/main/Images%20and%20Videos/JoyStick%20Control.jpg)
+
+![Click here for Demo video](https://github.com/Sampad-Hegde/Wireless_Robot-Android-APP-for-controlling-BT-or-WiFi-enebled-Robot/blob/main/Images%20and%20Videos/APP%20Demo.mp4)
